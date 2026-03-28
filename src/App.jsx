@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import './App.css'
 import Cardheader from "./componentes/cardheader/Cardheader";
 import Musica from "./componentes/musica/Musica";
@@ -8,22 +8,47 @@ import Eventos from "./componentes/eventos/Eventos";
 import Detalles from "./componentes/detalles/Detalles";
 import Rsvp from "./componentes/rsvp/Rsvp";
 import Cierre from "./componentes/cierre/Cierre";
+import RevealOnScroll from "./componentes/reveal/RevealOnScroll";
 
 function App() {
   return (
 <div>
+
+<RevealOnScroll> 
          <Musica />
         <Cardheader />
-        <Regresiva />
-        <Presentacion />
-        <Eventos />
-        <Detalles />
-        <Rsvp />
-        <Cierre/>
+        </RevealOnScroll>
 
-       
+        <RevealOnScroll>  
+        <Regresiva />
+</RevealOnScroll>
+
+<RevealOnScroll delay={100}>
+        <Presentacion />
+      </RevealOnScroll>
+
+
+      <RevealOnScroll delay={100}>
+        <Eventos />
+      </RevealOnScroll>
+
+
+      <RevealOnScroll delay={100}>
+        <Detalles />
+      </RevealOnScroll>
+
+
+      <RevealOnScroll delay={100}>
+        <Rsvp />
+      </RevealOnScroll>
+
+
+      <RevealOnScroll delay={100}>
+        <Cierre />
+      </RevealOnScroll>
+
+
         </div>
 );
 }
-
 export default App;
