@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const repo = "boda1";
+const repo = "Boda1";
 
 export default defineConfig({
   plugins: [react()],
