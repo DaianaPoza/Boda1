@@ -19,7 +19,7 @@ function Cierre() {
           ¡Nos vemos en el altar!
         </h1>
         <h2 className="cierre__firma">
-          Maria & Felipe
+          Carla & Nicolas
         </h2>
       </div>
     </section>
