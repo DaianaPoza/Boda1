@@ -1,39 +1,40 @@
-.presentacion{
-    text-align: center;
-    background-color: rgb(113, 141, 66);
-    color: white;
-    padding: 2rem;
-    
+.presentacion {
+  text-align: center;
+  padding: clamp(2.5rem, 6vw, 4rem) 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(153, 119, 65, 0.14);
+  border-radius: 34px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  color: var(--text);
 }
 
 .presentacion::before,
 .presentacion::after {
   content: "";
   display: block;
-  width: 72px;
+  width: 84px;
   height: 1px;
-  margin: 0 auto;
+  margin: 0.85rem auto;
   background: linear-gradient(
     to right,
     transparent,
-    rgba(255,255,255,0.7),
+    rgba(185, 146, 88, 0.7),
     transparent
   );
 }
 
-/* línea superior */
 .presentacion::before {
   margin-bottom: 2rem;
 }
 
-/* línea inferior */
 .presentacion::after {
   margin-top: 2rem;
 }
 
-  
-
-.noscasamos{
-    margin-bottom: 1.5rem;
+.noscasamos {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  letter-spacing: 0.02em;
 }
 

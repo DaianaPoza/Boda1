@@ -1,69 +1,71 @@
 .eventos {
-    background-color: #ffffff;
-    padding: 4rem 1rem;
-    text-align: center;
-    color: rgb(113, 141, 66);
-    
-  }
-  
-  .evento {
-    max-width: 680px;
-    margin: 0 auto;
-  }
-  
-  .evento__icon {
-    font-size: 2.8rem;
-    margin-bottom: 0.8rem;
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  .evento__tipo {
-    letter-spacing: 3px;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.8;
-    font-family:cursive;
-  }
-  
-  .evento__lugar {
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
-  }
-  
-  .evento__info {
-    margin: 0.2rem 0;
-    font-size: 1.5rem;
-    font-family: cursive;
-    
-  }
-  
-  .evento__btn {
-    display: inline-block;
-    margin-top: 1.2rem;
-    padding: 0.8rem 1.4rem;
-    background-color: rgb(113, 141, 66);
-    color: #fff;
-    border-radius: 999px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-family: cursive;
-  }
-  
-  .eventos__divider {
-    width: 70px;
-    height: 1px;
-    margin: 3rem auto;
-    background: linear-gradient(
-      to right,
-      transparent,
-      rgba(107, 124, 89, 0.6),
-      transparent
-    );
-  }
-  
-  @keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0); }
-  }
+  background: rgba(255, 255, 255, 0.76);
+  padding: clamp(3rem, 6vw, 4rem) 1rem;
+  text-align: center;
+  color: var(--text);
+  border: 1px solid rgba(153, 119, 65, 0.16);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.evento {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.evento__icon {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--gold);
+  animation: float 3s ease-in-out infinite;
+}
+
+.evento__tipo {
+  letter-spacing: 0.18em;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+  font-family: 'Georgia', serif;
+}
+
+.evento__lugar,
+.evento__info {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+
+.evento__info {
+  line-height: 1.7;
+}
+
+.evento__btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.85rem 1.4rem;
+  background: rgba(185, 146, 88, 0.12);
+  color: var(--text);
+  border: 1px solid rgba(185, 146, 88, 0.35);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.eventos__divider {
+  width: 70px;
+  height: 1px;
+  margin: 3rem auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(185, 146, 88, 0.65),
+    transparent
+  );
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
   

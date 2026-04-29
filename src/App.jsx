@@ -4,6 +4,7 @@ import Cardheader from "./componentes/cardheader/Cardheader";
 import Musica from "./componentes/musica/Musica";
 import Regresiva from "./componentes/regresiva/Regresiva";
 import Presentacion from "./componentes/presentacion/Presentacion";
+import Galeria from "./componentes/galeria/Galeria";
 import Eventos from "./componentes/eventos/Eventos";
 import Detalles from "./componentes/detalles/Detalles";
 import Rsvp from "./componentes/rsvp/Rsvp";
@@ -19,14 +20,22 @@ function App() {
         <Cardheader />
         </RevealOnScroll>
 
+
+<div className="secciones">
         <RevealOnScroll>  
         <Regresiva />
 </RevealOnScroll>
 
+
+
 <RevealOnScroll delay={100}>
         <Presentacion />
       </RevealOnScroll>
+</div>
 
+      <RevealOnScroll delay={120}>
+        <Galeria />
+      </RevealOnScroll>
 
       <RevealOnScroll delay={100}>
         <Eventos />

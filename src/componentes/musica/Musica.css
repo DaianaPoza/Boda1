@@ -1,34 +1,24 @@
 .music-fab {
-    position: fixed;
-    right: 18px;
-    bottom: 18px;
-    z-index: 9999;
-  
-    width: 54px;
-    height: 54px;
-    border-radius: 999px !important;
-  
-    display: grid;
-    place-items: center;
-  
-    /* 🎨 estilo oliva */
-    background: rgba(107, 124, 89, 0.85); /* oliva elegante */
-    color: #f5f5f2;
-  
-    border: 1px solid rgba(255, 255, 255, 0.35);
-  
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-  
-    box-shadow:
-      0 10px 25px rgba(0, 0, 0, 0.25),
-      inset 0 1px 1px rgba(255, 255, 255, 0.25);
-  
-    font-size: 18px;
-    line-height: 1;
-  
-    transition: all 0.25s ease;
-  }
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px !important;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 13, 11, 0.78);
+  color: #f7ede2;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 18px 45px rgba(16, 12, 8, 0.24), inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  font-size: 18px;
+  line-height: 1;
+  transition: all 0.25s ease;
+}
+
   
   .music-fab:hover {
     transform: scale(1.05);
@@ -45,18 +35,16 @@
 
  
   
-  .music-fab,
+.music-fab,
 .music-fab:hover,
 .music-fab:focus,
 .music-fab:active,
 .music-fab:focus-visible {
-  background-color: rgba(107, 124, 89, 0.85) !important;
-  border-color: rgba(255, 255, 255, 0.35) !important;
-  color: #f5f5f2 !important;
+  background-color: rgba(15, 13, 11, 0.78) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  color: #f7ede2 !important;
 }
 
 .music-fab:focus {
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.25),
-    inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 18px 45px rgba(16, 12, 8, 0.24), inset 0 1px 1px rgba(255, 255, 255, 0.12) !important;
 }

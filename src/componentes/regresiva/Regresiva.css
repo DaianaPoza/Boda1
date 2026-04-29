@@ -1,62 +1,85 @@
 .countdown {
-    width: 100%;
-    padding: 4rem 0;
-    background-color: #ffffff; /* fondo blanco */
-    text-align: center;
-  }
-  
-  /* Título */
-  .countdown__title {
-    margin-bottom: 2rem;
-    color: #6b7c59; /* oliva */
-    font-size: 2rem;
+  width: 100%;
+  padding: clamp(3rem, 6vw, 4rem) 1rem;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(153, 119, 65, 0.16);
+  box-shadow: var(--shadow);
+  border-radius: 32px;
+  text-align: center;
+  color: var(--text);
+}
+
+.countdown__title {
+  margin-bottom: 2rem;
+  color: var(--text);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.04em;
+}
+
+.countdown__time {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: start;
+  gap: clamp(0.6rem, 3vw, 2rem);
+}
+
+.countdown__time div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.countdown__time span {
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1;
+  font-size: clamp(2.2rem, 7vw, 3rem);
+}
+
+.countdown__time small {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+
+.countdown__subtitle {
+  margin-top: 2rem;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+
+.countdown__ended {
+  color: var(--text);
+  font-size: 3rem;
+}
+
+@media (max-width: 480px) {
+  .countdown {
+    padding: 2.6rem 0.7rem;
   }
 
-  /* Contenedor de los números */
+  .countdown__title {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
   .countdown__time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: clamp(1rem, 5vw, 3rem);
-    flex-wrap: wrap; /* 🔑 evita que se corte */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
   }
-  
-  /* Cada bloque (días, horas, etc.) */
-  .countdown__time div {
-    display: flex;
-    flex-direction: column; /* número arriba, texto abajo */
-    align-items: center;
-    min-width: 70px;
-  }
-  
-  /* NÚMEROS */
+
   .countdown__time span {
-    font-weight: 600;
-    color: #6b7c59; /* oliva */
-    line-height: 1;
-    font-size: clamp(2.2rem, 7vw, 3rem);
+    font-size: clamp(1.7rem, 9vw, 2.4rem);
   }
-  
-  /* TEXTO debajo */
+
   .countdown__time small {
-    margin-top: 0.3rem;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #6b7c59; /* oliva */
-    opacity: 0.85;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
   }
-  
-  /* Subtítulo */
-  .countdown__subtitle {
-    margin-top: 2rem;
-    color: #6b7c59;
-    opacity: 0.9;
-  }
-  
- /* Cuando llega el día */
-.countdown__ended {
-    color: #6b7c59;
-    font-size: 3rem;
-  }
+}
   

@@ -28,24 +28,20 @@ function Eventos() {
   return (
     <section className="eventos">
       <Evento
-        icon={<span className="icon">💍</span>}
-        tipo="Ceremonia"
-        lugar="Basílica del Santísimo Sacramento"
-        hora="20:00 hs"
-        direccion="San Martín 1035"
+        tipo="Ceromonia"
+        lugar="Basílica de María Auxiliadora"
+        hora="18:00 hs"
         ciudad="CABA"
-        mapUrl="https://www.google.com/maps/place/Bas%C3%ADlica+del+Sant%C3%ADsimo+Sacramento/@-34.5955499,-58.394855,14z/data=!3m1!4b1!4m6!3m5!1s0x95bccad316089dfb:0xf4e3243dcaf17213!8m2!3d-34.595587!4d-58.3742983!16s%2Fg%2F120n2tz6?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+        mapUrl="https://www.google.com/maps/place/Bas%C3%ADlica+Mar%C3%ADa+Auxiliadora+y+San+Carlos/@-34.6143288,-58.4254907,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcca5bf5b9469d:0x41ff55ac78658d32!8m2!3d-34.6143332!4d-58.4229158!16s%2Fg%2F12lnj1965?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D"
       />
 
       <div className="eventos__divider" />
 
       <Evento
-        icon={<span className="icon">🥂</span>}
-        tipo="Fiesta"
+       
+        tipo="Evento"
         lugar="Hotel Hilton Buenos Aires"
-        hora="21:00 hs"
-        direccion="Macacha Güemes 351"
-        ciudad="CABA"
+        hora="20:00 hs"
         mapUrl="https://www.google.com/maps/place/Hotel+Hilton+Buenos+Aires/@-34.605662,-58.3841159,14z/data=!3m2!4b1!5s0x95a3352ee7a49941:0x288c9bfe63bf2c97!4m9!3m8!1s0x95a335ef4809ceef:0x3945c8c351477a54!5m2!4m1!1i2!8m2!3d-34.605699!4d-58.3635592!16s%2Fm%2F064mb0g?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
       />
     </section>

@@ -4,8 +4,8 @@ import './Presentacion.css';
 function Presentacion() {
   return (
     <section className='presentacion'>
-        <h1 className='noscasamos'>  ¡Nos casamos! </h1> 
-        <h2 className='invitacion'>  Queremos invitarte a compartir este día tan especial con nosotros   </h2>
+        <h1 className='noscasamos'>  Nuestro gran día </h1> 
+        <h2 className='invitacion'> Queremos compartirlo con vos... </h2>
        </section>
   );
 }

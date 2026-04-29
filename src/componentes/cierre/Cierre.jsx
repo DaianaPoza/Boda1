@@ -1,4 +1,5 @@
 import "./Cierre.css";
+import videoCierre from "../../assets/videocierre.mp4";
 
 function Cierre() {
   return (
@@ -9,16 +10,13 @@ function Cierre() {
         loop
         muted
         playsInline
-      >
-        <source
-    src={`${import.meta.env.BASE_URL}videos/pareja.mp4`}
-    type="video/mp4"
-  />
-      </video>
+        preload="metadata"
+        src={videoCierre}
+      />
 
       <div className="cierre__overlay">
         <h1 className="cierre__texto">
-          Esto recién empieza...
+          ¡Nos vemos en el altar!
         </h1>
         <h2 className="cierre__firma">
           Maria & Felipe
@@ -29,4 +27,3 @@ function Cierre() {
 }
 
 export default Cierre;
-

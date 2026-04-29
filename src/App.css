@@ -1,18 +1,70 @@
-/*.container {
-  width: 100%;
-  max-width: 1080px;
+:root {
+  --bg: #f7f1e8;
+  --bg-soft: #fff8f0;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+  --text: #221b14;
+  --text-muted: #5c4f42;
+  --gold: #b99258;
+  --gold-soft: #d4b56d;
+  --border: rgba(153, 119, 65, 0.18);
+  --shadow: 0 24px 70px rgba(34, 24, 14, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(255, 251, 245, 0.95), rgba(243, 232, 213, 0.98) 40%, var(--bg) 100%);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Georgia', serif;
+  color: var(--text);
+  margin: 0;
+}
+
+p,
+span,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.secciones {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 900px;
   margin: 0 auto;
-  padding: clamp(1rem, 4vw, 2.5rem);
-}
-*/
-
-h1{
-  font-family: cursive;
-  
-  
-}
-
-h2{
-  font-family: cursive;
-  
 }

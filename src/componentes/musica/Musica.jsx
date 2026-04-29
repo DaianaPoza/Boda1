@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Button from "react-bootstrap/Button";
 import './Musica.css'
+import miCancion from "../../assets/music/Until-I-Found-You.mp3";
 
 function Musica() {
   const audioRef = useRef(null);
@@ -39,10 +40,11 @@ function Musica() {
       {/* Audio global */}
       <audio ref={audioRef} loop preload="none">
       <source
-    src={`${import.meta.env.BASE_URL}music/ordinary.mp3`}
-    type="audio/mpeg"
-  />
-      </audio>
+  src={miCancion}
+  type="audio/mpeg"
+/>
+      
+        </audio>
     </>
   );
 }
